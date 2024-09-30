@@ -12,7 +12,7 @@ spec:
         sizeLimit: 5Mi
   initContainers:
     - name: vault
-      image:
+      image: 838007018287.dkr.ecr.us-east-1.amazonaws.com/vault-init-container:v1
       env:
         - name: VAULT_ADDR
           value: "https://vault-internal.angadicnc.online:8200"

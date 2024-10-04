@@ -35,7 +35,7 @@ spec:
           name: vault
   containers:
     - name: backend
-      image: 838007018287.dkr.ecr.us-east-1.amazonaws.com/expense-backend:2.0.4
+      image: 838007018287.dkr.ecr.us-east-1.amazonaws.com/expense-backend:2.0.6
       volumeMounts:
         - mountPath: /data
           name: vault
@@ -51,6 +51,6 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 80
+      port: 8080
       targetPort: 8080
 ---
